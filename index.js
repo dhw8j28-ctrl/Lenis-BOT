@@ -15,9 +15,8 @@ const client = new Client({
 const player = new Player(client);
 
 // تحميل جميع أدوات البحث والتشغيل المعتمدة
-player.extractors.loadMulti(DefaultExtractors);
 
-client.on("clientReady", () => {
+client.on("clientReady", () => { 
   console.log(`✅ Bot is online as: ${client.user.tag}`);
 });
 
